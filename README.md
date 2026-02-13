@@ -94,7 +94,7 @@ Place queen row by row
 ## 3️⃣ Water Jug Problem
 
 ```
-🚀 START from (0,0)
+ START from (0,0)
 
  WHILE goal not reached:
      Fill Jug1 / Fill Jug2
@@ -490,7 +490,7 @@ count = 0
      IF vowel:
         count++
 
-🖨️ Print count
+ Print count
 ```
 
 ---
