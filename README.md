@@ -50,22 +50,22 @@
 ## 1️⃣ 8–Puzzle (BFS)
 
 ```
-🚀 START
-📥 Read start_state, goal_state
-🧱 Create QUEUE and VISITED set
-➕ Push start_state into QUEUE
+START
+Read start_state, goal_state
+Create QUEUE and VISITED set
+Push start_state into QUEUE
 
-🔁 WHILE QUEUE not empty:
-    📤 state ← remove front element
-    ❓ IF state = goal_state:
-        🛑 STOP
+WHILE QUEUE not empty:
+    state ← remove front element
+     IF state = goal_state:
+         STOP
 
-    🔄 Generate all valid moves
-    🔁 FOR each new_state:
-        ❓ IF not visited:
-            ✔️ Mark visited
-            ➕ Push into QUEUE
-🏁 END
+     Generate all valid moves
+     FOR each new_state:
+         IF not visited:
+             Mark visited
+             Push into QUEUE
+ END
 ```
 
 ---
@@ -73,20 +73,20 @@
 ## 2️⃣ 8–Queen Problem
 
 ```
-🚀 START
-👑 Place queen row by row
+START
+Place queen row by row
 
-🔁 FOR each row:
-    🔁 FOR each column:
-        ❓ IF position safe:
-            👑 Place queen
-            🔁 Recurse next row
-            ❌ IF fail:
-                ↩️ Remove queen (Backtrack)
+ FOR each row:
+     FOR each column:
+         IF position safe:
+             Place queen
+             Recurse next row
+             IF fail:
+                 Remove queen (Backtrack)
 
-🎯 IF all queens placed:
-    🖨️ Print solution
-🏁 END
+ IF all queens placed:
+     Print solution
+ END
 ```
 
 ---
@@ -96,15 +96,15 @@
 ```
 🚀 START from (0,0)
 
-🔁 WHILE goal not reached:
-    💧 Fill Jug1 / Fill Jug2
-    🚿 Empty Jug1 / Empty Jug2
-    🔄 Pour Jug1 → Jug2
-    🔄 Pour Jug2 → Jug1
+ WHILE goal not reached:
+     Fill Jug1 / Fill Jug2
+     Empty Jug1 / Empty Jug2
+     Pour Jug1 → Jug2
+     Pour Jug2 → Jug1
 
-📍 Track visited states
-🛑 STOP when target reached
-🏁 END
+ Track visited states
+ STOP when target reached
+ END
 ```
 
 ---
@@ -112,15 +112,15 @@
 ## 4️⃣ Crypt Arithmetic
 
 ```
-🚀 START
-🔤 Take equation with letters
+ START
+ Take equation with letters
 
-🔁 FOR each digit permutation:
-    🔢 Replace letters with digits
-    ❓ Check arithmetic condition
-    ✔️ IF valid:
-        🖨️ Print solution
-🏁 END
+ FOR each digit permutation:
+     Replace letters with digits
+     Check arithmetic condition
+     IF valid:
+         Print solution
+ END
 ```
 
 ---
@@ -128,15 +128,15 @@
 ## 5️⃣ Missionaries & Cannibals
 
 ```
-🚀 START from initial state
-📦 Use BFS
+ START from initial state
+ Use BFS
 
-🔄 Generate possible moves
-❌ Reject unsafe states
-➕ Add safe states to queue
+ Generate possible moves
+ Reject unsafe states
+ Add safe states to queue
 
-🎯 Stop when goal reached
-🏁 END
+ Stop when goal reached
+ END
 ```
 
 ---
@@ -144,14 +144,14 @@
 ## 6️⃣ Vacuum Cleaner
 
 ```
-🚀 START at current room
+ START at current room
 
-❓ IF room dirty:
-    🧹 Clean room
+ IF room dirty:
+     Clean room
 
-➡️ Move to next room
-🔁 Repeat until all clean
-🏁 END
+ Move to next room
+ Repeat until all clean
+ END
 ```
 
 ---
@@ -159,19 +159,19 @@
 ## 7️⃣ Breadth First Search (BFS)
 
 ```
-🚀 START from start_node
-📦 Create QUEUE
-✔️ Mark start visited
+ START from start_node
+ Create QUEUE
+ Mark start visited
 
-🔁 WHILE QUEUE not empty:
-    📤 Remove node
-    🖨️ Print node
+ WHILE QUEUE not empty:
+     Remove node
+     Print node
 
-    🔁 FOR each neighbor:
-        ❓ IF not visited:
-            ✔️ Mark visited
-            ➕ Add to QUEUE
-🏁 END
+     FOR each neighbor:
+         IF not visited:
+             Mark visited
+             Add to QUEUE
+ END
 ```
 
 ---
@@ -180,15 +180,15 @@
 
 ```
 DFS(node):
-    ✔️ Mark node visited
-    🖨️ Print node
+     Mark node visited
+     Print node
 
-    🔁 FOR each neighbor:
-        ❓ IF not visited:
-            🔁 DFS(neighbor)
+     FOR each neighbor:
+         IF not visited:
+             DFS(neighbor)
 
-🚀 START DFS(start_node)
-🏁 END
+ START DFS(start_node)
+ END
 ```
 
 ---
@@ -196,12 +196,12 @@ DFS(node):
 ## 9️⃣ Travelling Salesman
 
 ```
-🚀 START
-🛣️ List all possible paths
-💰 Calculate cost for each
-📉 Select minimum cost path
-🖨️ Print best path
-🏁 END
+START
+List all possible paths
+Calculate cost for each
+Select minimum cost path
+ Print best path
+ END
 ```
 
 ---
@@ -209,18 +209,18 @@ DFS(node):
 ## 🔟 A* Search
 
 ```
-🚀 START
-📂 OPEN ← start node
+ START
+ OPEN ← start node
 
-🔁 WHILE OPEN not empty:
-    📉 Select node with lowest f(n) = g + h
+ WHILE OPEN not empty:
+     Select node with lowest f(n) = g + h
 
-    ❓ IF goal reached:
-        🛑 STOP
+    IF goal reached:
+         STOP
 
-    🔄 Expand neighbors
-    📊 Update costs
-🏁 END
+     Expand neighbors
+     Update costs
+ END
 ```
 
 ---
@@ -228,12 +228,12 @@ DFS(node):
 ## 1️⃣1️⃣ Map Coloring
 
 ```
-🚀 START
-🎨 FOR each region:
+ START
+FOR each region:
     Try each color
-    ❓ IF no neighbor conflict:
-        ✔️ Assign color
-🏁 END
+     IF no neighbor conflict:
+         Assign color
+ END
 ```
 
 ---
@@ -241,15 +241,15 @@ DFS(node):
 ## 1️⃣2️⃣ Tic Tac Toe
 
 ```
-🚀 START game
+ START game
 
-🔁 WHILE game not over:
-    🎮 Player move
-    ❓ Check win
-    ❓ Check draw
+ WHILE game not over:
+     Player move
+     Check win
+     Check draw
 
-📢 Declare result
-🏁 END
+ Declare result
+ END
 ```
 
 ---
@@ -259,10 +259,10 @@ DFS(node):
 ```
 FUNCTION minimax(node, isMax):
 
-    ❓ IF leaf node:
+     IF leaf node:
         RETURN value
 
-    ❓ IF isMax:
+     IF isMax:
         RETURN max(children)
     ELSE:
         RETURN min(children)
@@ -275,11 +275,11 @@ FUNCTION minimax(node, isMax):
 ```
 FUNCTION alphabeta(node, alpha, beta):
 
-    ❓ IF leaf:
+     IF leaf:
         RETURN value
 
-    🔄 Update alpha/beta
-    ✂️ Prune if possible
+     Update alpha/beta
+     Prune if possible
 ```
 
 ---
@@ -287,12 +287,12 @@ FUNCTION alphabeta(node, alpha, beta):
 ## 1️⃣5️⃣ Decision Tree
 
 ```
-🚀 START
-📊 Select best feature
-✂️ Split dataset
-🔁 Repeat for subsets
-🌿 Stop at leaf
-🏁 END
+START
+ Select best feature
+ Split dataset
+ Repeat for subsets
+ Stop at leaf
+ END
 ```
 
 ---
@@ -300,12 +300,12 @@ FUNCTION alphabeta(node, alpha, beta):
 ## 1️⃣6️⃣ Neural Network
 
 ```
-🚀 START
-📥 Input data
-⚖️ Multiply by weights
-🧠 Apply activation
-📤 Produce output
-🏁 END
+ START
+ Input data
+ Multiply by weights
+ Apply activation
+ Produce output
+ END
 ```
 
 ---
@@ -314,7 +314,7 @@ FUNCTION alphabeta(node, alpha, beta):
 
 ```
 sum(N):
-    ❓ IF N = 0:
+     IF N = 0:
         RETURN 0
     RETURN N + sum(N - 1)
 ```
@@ -324,8 +324,8 @@ sum(N):
 ## 1️⃣8️⃣ Name & DOB Database
 
 ```
-📂 Store person(name, dob)
-🔍 Query person(X, Y)
+Store person(name, dob)
+Query person(X, Y)
 ```
 
 ---
@@ -333,7 +333,7 @@ sum(N):
 ## 1️⃣9️⃣ Student–Teacher–Subject
 
 ```
-📂 Store relations:
+ Store relations:
     student(X)
     teacher(Y)
     teaches(Y, Subject)
@@ -344,8 +344,8 @@ sum(N):
 ## 2️⃣0️⃣ Planets Database
 
 ```
-🌍 Store planet facts
-🔍 Query planets
+Store planet facts
+Query planets
 ```
 
 ---
@@ -366,11 +366,11 @@ ELSE:
 ## 2️⃣2️⃣ Bird Fly Program
 
 ```
-🕊️ Store bird facts
-❌ Store non-flying birds
+Store bird facts
+Store non-flying birds
 
-❓ IF bird AND not exception:
-    ✔️ Can fly
+IF bird AND not exception:
+     Can fly
 ```
 
 ---
@@ -388,9 +388,9 @@ grandparent(X, Z):
 ## 2️⃣4️⃣ Diet System
 
 ```
-📂 Store disease-diet rules
-📥 Input disease
-🍎 Suggest diet
+ Store disease-diet rules
+ Input disease
+ Suggest diet
 ```
 
 ---
@@ -398,10 +398,10 @@ grandparent(X, Z):
 ## 2️⃣5️⃣ Monkey Banana
 
 ```
-🐒 Move to box
-📦 Push box
-🧗 Climb box
-🍌 Take banana
+ Move to box
+ Push box
+ Climb box
+ Take banana
 ```
 
 ---
@@ -409,9 +409,9 @@ grandparent(X, Z):
 ## 2️⃣6️⃣ Fruit Color Matching
 
 ```
-🍎 Store fruit-color pairs
-📥 Input fruit
-🎨 Display color
+Store fruit-color pairs
+Input fruit
+Display color
 ```
 
 ---
@@ -419,10 +419,10 @@ grandparent(X, Z):
 ## 2️⃣7️⃣ Best First Search
 
 ```
-🚀 START
-📉 Select node with lowest heuristic
-🔄 Expand neighbors
-🎯 Stop at goal
+ START
+ Select node with lowest heuristic
+ Expand neighbors
+ Stop at goal
 ```
 
 ---
@@ -430,10 +430,10 @@ grandparent(X, Z):
 ## 2️⃣8️⃣ Medical Diagnosis
 
 ```
-📂 Store symptom-disease rules
-📥 Input symptoms
-🔍 Match rules
-🖨️ Show disease
+ Store symptom-disease rules
+ Input symptoms
+ Match rules
+ Show disease
 ```
 
 ---
@@ -441,10 +441,10 @@ grandparent(X, Z):
 ## 2️⃣9️⃣ Forward Chaining
 
 ```
-📌 Start with facts
-🔄 Apply rules
-➕ Generate new facts
-🎯 Stop when goal found
+ Start with facts
+ Apply rules
+ Generate new facts
+ Stop when goal found
 ```
 
 ---
@@ -452,9 +452,9 @@ grandparent(X, Z):
 ## 3️⃣0️⃣ Backward Chaining
 
 ```
-🎯 Start from goal
-🔍 Check supporting rules
-✔️ Verify facts
+ Start from goal
+ Check supporting rules
+ Verify facts
 ```
 
 ---
@@ -462,10 +462,10 @@ grandparent(X, Z):
 ## 3️⃣1️⃣ WordPress Blog Task
 
 ```
-🌐 Create webpage
-📝 Add title
-🔗 Add anchor tag
-🚀 Publish
+ Create webpage
+ Add title
+ Add anchor tag
+ Publish
 ```
 
 ---
@@ -473,10 +473,10 @@ grandparent(X, Z):
 ## 3️⃣2️⃣ Pattern Matching
 
 ```
-🔍 Compare two patterns
-❓ IF equal:
-    ✔️ Match found
-❌ ELSE:
+ Compare two patterns
+ IF equal:
+     Match found
+ ELSE:
     No match
 ```
 
@@ -486,8 +486,8 @@ grandparent(X, Z):
 
 ```
 count = 0
-🔁 FOR each character:
-    ❓ IF vowel:
+ FOR each character:
+     IF vowel:
         count++
 
 🖨️ Print count
